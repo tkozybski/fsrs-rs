@@ -207,7 +207,7 @@ impl MetricsRenderer for ProgressCollector {
 pub(crate) struct TrainingConfig {
     pub model: ModelConfig,
     pub optimizer: AdamConfig,
-    #[config(default = 10)]
+    #[config(default = 20)]
     pub num_epochs: usize,
     #[config(default = 512)]
     pub batch_size: usize,
